@@ -6,8 +6,22 @@
 # Criteria 2: Clock within 22:00-07:00 on weekends and idle for at least 1 hour
 # Criteria 3: No active audio streams detected at idle check
 # Criteria 4: Network activity below threshold on specified interfaces at idle check
+# Criteria 5: CPU-load below threshold at idle check
 # The script will prompt the user before suspending the system.
 # Dependencies: xprintidle, pactl (from the pulseaudio-utils package), ifstat, zenity, mpstat (from sysstat package)
+
+# set the schedule:
+# sudo crontab -e
+# add the line
+# */5 * * * * /home/user/powerprofile/powerprofile.sh
+
+# Make sure right rights are set up
+# sudo visudo
+# add the line
+# username ALL=(ALL) NOPASSWD: /bin/systemctl suspend
+
+# Make the file executable
+# sudo chmod +x /path/to/your/script.sh
 
 export DISPLAY=:0
 export XAUTHORITY=$HOME/.Xauthority
