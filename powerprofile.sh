@@ -13,7 +13,7 @@ export DISPLAY=:0
 export XAUTHORITY=$HOME/.Xauthority
 
 # Log file location
-LOG_FILE="$HOME/Documents/logs/$(date '+%Y-%m-%d')_powerprofile.log"
+LOG_FILE="$HOME/powerprofile/logs/$(date '+%Y-%m-%d')_powerprofile.log"
 
 # Time intervals in milliseconds
 HOUR_MS=3600000  # 1 hour in milliseconds
