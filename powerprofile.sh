@@ -10,10 +10,10 @@
 # Dependencies: xprintidle, pactl (from the pulseaudio-utils package), ifstat, zenity, mpstat (from sysstat package)
 
 export DISPLAY=:0
-export XAUTHORITY=/home/henrik/.Xauthority
+export XAUTHORITY=$HOME/.Xauthority
 
 # Log file location
-LOG_FILE="/home/henrik/Documents/logs/$(date '+%Y-%m-%d')_powerprofile.log"
+LOG_FILE="$HOME/Documents/logs/$(date '+%Y-%m-%d')_powerprofile.log"
 
 # Time intervals in milliseconds
 HOUR_MS=3600000  # 1 hour in milliseconds
